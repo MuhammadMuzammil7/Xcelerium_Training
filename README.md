@@ -1,14 +1,14 @@
 # Xcelerium Training – Digital Design Tasks
 
-This repository contains the work completed during **Xcelerium Training**, focusing on **digital design using SystemVerilog**.  
+This repository contains the design tasks completed during **Xcelerium IC Design Training**, focusing on **digital design using SystemVerilog**.  
 The repository is organized into multiple task folders, where each task demonstrates the implementation and verification of different digital hardware modules.
 
 The designs include **combinational and sequential circuits**, along with **layered testbenches** to validate functionality through simulation.
 
 ---
 
-## 📁 Repository Structure
-
+## Repository Structure
+```
 xcelerium_training/
 │
 ├── Task_1/
@@ -22,12 +22,13 @@ xcelerium_training/
 │ ├── Counter/
 │ ├── Register/
 │ └── Shift_Register/
+```
 
 ---
 
-## 📌 Task Overview
+## Task Overview
 
-### 🔹 Task 1 – Combinational Logic Designs
+### Task 1 – Combinational Logic Designs
 This task focuses on **basic combinational digital circuits**.  
 Each module is implemented using SystemVerilog and verified using a self-checking testbench.
 
@@ -38,7 +39,7 @@ Modules include:
 
 ---
 
-### 🔹 Task 2 – Arithmetic & Sequential Circuits
+### Task 2 – Arithmetic & Sequential Circuits
 This task extends to **more complex arithmetic circuits** and **sequential designs**, including registered implementations.
 Each design is verified using a system verilog based layered testbench.
 
@@ -50,7 +51,7 @@ Modules include:
 
 ---
 
-## 🛠 Tools & Technologies
+## Tools & Technologies
 - **Language:** SystemVerilog  
 - **Simulation:** QuestaSim/EDA Playground   
 
@@ -66,3 +67,4 @@ Modules include:
 ## Author
 **Muhammad Muzammil Ahmed**  
 Electronic Engineering Student  
+
