@@ -57,10 +57,7 @@ The adder tree multiplier implements an 8-bit by 8-bit multiplication using a st
 ---
 
 ### Array Multiplier
-The array multiplier implements an 8-bit by 8-bit multiplication using a structured, row-by-row hardware architecture. Partial 
-products are generated for each bit of the multiplier and accumulated through cascaded adder stages, forming a regular and 
-scalable array structure. This design demonstrates how basic arithmetic blocks such as AND logic and adders can be combined to 
-realize a complete multiplication unit, making it suitable for understanding hardware-based multiplication and data-path design.
+The array multiplier implements an 8-bit by 8-bit multiplication using a structured, row-by-row hardware architecture. Partial products are generated for each bit of the multiplier and accumulated through cascaded adder stages, forming a regular and scalable array structure. This design demonstrates how basic arithmetic blocks such as AND logic and adders can be combined to realize a complete multiplication unit, making it suitable for understanding hardware-based multiplication and data-path design.
 
 ### Structure
 <img width="807" height="705" alt="array multiplier" src="https://github.com/user-attachments/assets/bad12f02-42bf-41a1-833f-d5606119c434" />
@@ -85,8 +82,7 @@ realize a complete multiplication unit, making it suitable for understanding har
 
 ### Up-Down Counter
 The up-down counter module implements an 8-bit synchronous counter capable of counting either upward or downward based on a 
-control signal. Counting is enabled through an explicit enable input, and the counter supports asynchronous reset. This module
-is commonly used in control logic, sequencing, and timing-related applications.
+control signal. Counting is enabled through an explicit enable input, and the counter supports asynchronous reset. This module is commonly used in control logic, sequencing, and timing-related applications.
 
 **Files:**
 - `counter.sv` – DUT
@@ -123,8 +119,7 @@ module represents a basic sequential storage element in digital systems.
 
 ### Shift Register
 The shift register module provides serial data shifting functionality with a configurable width. Depending on the direction 
-control signal, data can be shifted left or right when enabled. This module is useful for data serialization, bit manipulation,
-and intermediate storage in sequential digital designs.
+control signal, data can be shifted left or right when enabled. This module is useful for data serialization, bit manipulation, and intermediate storage in sequential digital designs.
 
 **Files:**
 - `shift_reg.sv` – DUT
@@ -138,4 +133,4 @@ and intermediate storage in sequential digital designs.
 #### Simulation Log:
 <img width="328" height="341" alt="shift reg png" src="https://github.com/user-attachments/assets/a647337b-8378-4e45-ae31-d6566cf050eb" />
 
-```
+---
