@@ -1,6 +1,6 @@
 # Task 1 – Combinational Logic Modules
 
-This folder contains **Task 1** of the Xcelerium Training, which focuses on the design and verification of **fundamental combinational digital circuits** using SystemVerilog.
+This folder contains **Task 1** of the **Xcelerium Training Program**, which focuses on the design and verification of **fundamental combinational digital circuits** using SystemVerilog.
 
 Each subfolder represents an independent design with its corresponding testbench for functional verification.
 
@@ -35,20 +35,20 @@ and a carry-out, allowing it to handle arithmetic operations that exceed the 32-
 - `adder32.sv` – DUT
 - `adder32_tb.sv` – Testbench
 
-### Simulation Result
+#### Simulation Result:
 <img width="615" height="108" alt="adderattach1" src="https://github.com/user-attachments/assets/0ee0f696-26fe-4c9b-a9b6-cdafd4507394" />
 
 ---
 
 ### Barrel Shifter
-The barrel shifter module performs efficient left or right shifts on a 32-bit input vector. The shift amount is specified
-using a 5-bit input, allowing shifts from 0 to 31 positions, while the direction input selects between left and right shifting.
+The barrel shifter module performs efficient left or right shifts on a 32-bit input vector. The shift amount is specified using a 
+5-bit input, allowing shifts from 0 to 31 positions, while the direction input selects between left and right shifting.
 
 **Files:**
 - `barrel_shifter.sv` – DUT
 - `barrel_shifter_tb.sv` – Testbench
 
-### Simulation Result
+#### Simulation Result:
 <img width="719" height="91" alt="barrelshifterattach1" src="https://github.com/user-attachments/assets/fff26835-a98a-4fbd-9d58-2e98f9c84120" />
 
 ---
@@ -63,7 +63,7 @@ low. This module is useful for selecting the highest-priority signal in combinat
 - `encoder8to3.sv` – DUT
 - `encoder8to3_tb.sv` – Testbench
 
-### Simulation Result
+#### Simulation Result:
 <img width="717" height="97" alt="encoder8to3attach1" src="https://github.com/user-attachments/assets/2e5684c2-393a-4353-b8cd-c04763358ad7" />
 
 ---
