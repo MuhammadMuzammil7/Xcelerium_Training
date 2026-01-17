@@ -1,7 +1,6 @@
-## Task 2 - Sequential Circuit Design
+# Task 2 - Sequential Circuit Design
 
-This folder contains Task 2 of the Xcelerium Training, which focuses on the design and verification of fundamental sequential 
-and arithmetic digital circuits using SystemVerilog.
+This folder contains **Task 2** of the **Xcelerium Training Program**, which focuses on the design and verification of **fundamental sequential and arithmetic digital circuits** using SystemVerilog.
 
  Each subfolder represents an independent design with its corresponding testbench for functional verification.
 
@@ -13,26 +12,27 @@ Task_2/
 │
 ├── Adder_Tree_Multiplier/
 │   ├── adder_tree_mult.sv
-│   └── adder_tree_mult_tb.sv
+│   └── adder_tree_mult_tb_layered.sv
 │
 ├── Array_Multiplier/
-│   ├── androw.sv
 │   ├── adderrow.sv
+│   ├── androw.sv
 │   ├── mult_row.sv
 │   ├── multiplier.sv
-│   └── multiplier_tb.sv
+│   ├── multiplier_registered.sv
+│   └── multiplier_registered_tb_layered.sv
 │
 ├── Counter/
 │   ├── counter.sv
-│   └── counter_tb.sv
+│   └── counter_tb_layered.sv
 │
 ├── Register/
 │   ├── register32.sv
-│   └── register32_tb.sv
+│   └── register32_tb_assert.sv
 │
 └── Shift_Register/
     ├── shift_reg.sv
-    └── shift_reg_tb.sv
+    └── shift_reg_tb_layered.sv
 ```
 
 ---
@@ -40,13 +40,19 @@ Task_2/
 ## Module Description
 
 ### Adder Tree Multiplier
-The adder tree multiplier implements an 8-bit by 8-bit multiplication using a structured partial-product and adder-tree approach.
-The inputs are first registered, after which partial products are generated and summed hierarchically using a multi-level adder 
-tree. The final multiplication result is registered at the output, making this design suitable for synchronous digital systems.
+The adder tree multiplier implements an 8-bit by 8-bit multiplication using a structured partial-product and adder-tree approach. The inputs are first registered, after which partial products are generated and summed hierarchically using a multi-level adder tree. The final multiplication result is registered at the output, making this design suitable for synchronous digital systems.
 
 **Files:**
 - `adder_tree_mult.sv` – DUT
-- `adder_tree_mult_tb.sv` – Testbench
+- `adder_tree_mult_tb_layered.sv` – Testbench
+
+### Simulation Result:
+
+#### Waveform:
+<img width="906" height="89" alt="adder tree wave" src="https://github.com/user-attachments/assets/03ea7692-4d24-4dd8-afd4-212b9803a338" />
+
+#### Simulation Log:
+<img width="406" height="344" alt="adder tree png" src="https://github.com/user-attachments/assets/2714eb1c-8124-44f6-8373-8db8bc4479a1" />
 
 ---
 
@@ -56,12 +62,24 @@ products are generated for each bit of the multiplier and accumulated through ca
 scalable array structure. This design demonstrates how basic arithmetic blocks such as AND logic and adders can be combined to 
 realize a complete multiplication unit, making it suitable for understanding hardware-based multiplication and data-path design.
 
+### Structure
+<img width="807" height="705" alt="array multiplier" src="https://github.com/user-attachments/assets/bad12f02-42bf-41a1-833f-d5606119c434" />
+
 **Files:**
 - `androw.sv` – Partial product generation block
 - `adderrow.sv` – Adder row used for accumulation
 - `mult_row.sv` – Combined AND and adder row
 - `multiplier.sv` – Top-level DUT
-- `multiplier_tb.sv` – Testbench
+- `multiplier_registered.sv` - Top-level DUT with registered inputs and outputs
+- `multiplier_registered_tb_layered.sv` – Testbench
+
+### Simulation Result:
+
+#### Waveform:
+<img width="904" height="119" alt="array mult wave" src="https://github.com/user-attachments/assets/ecc2157d-572d-44e7-91f5-dc514b81a32a" />
+
+#### Simulation Log:
+<img width="516" height="344" alt="array mult png" src="https://github.com/user-attachments/assets/bbadb73c-a2f0-4e4e-9820-ca007f24e160" />
 
 ---
 
@@ -72,7 +90,15 @@ is commonly used in control logic, sequencing, and timing-related applications.
 
 **Files:**
 - `counter.sv` – DUT
-- `counter_tb.sv` – Testbench
+- `counter_tb_layered.sv` – Testbench
+
+### Simulation Result:
+
+#### Waveform:
+<img width="906" height="91" alt="counter wave" src="https://github.com/user-attachments/assets/c183c312-b7c6-416f-8307-bead7cfdf194" />
+
+#### Simulation Log:
+<img width="295" height="344" alt="counter png" src="https://github.com/user-attachments/assets/e14a705a-3c2d-4434-8897-838aace0d5b8" />
 
 ---
 
@@ -83,7 +109,15 @@ module represents a basic sequential storage element in digital systems.
 
 **Files:**
 - `register32.sv` – DUT
-- `register32_tb.sv` – Testbench
+- `register32_tb_assert.sv` – Testbench
+
+### Simulation Result:
+
+#### Waveform:
+<img width="905" height="89" alt="reg wave eda" src="https://github.com/user-attachments/assets/77e1d663-f603-4dcf-9aea-6575fc7e50b3" />
+
+#### Simulation Log:
+<img width="372" height="214" alt="reg log" src="https://github.com/user-attachments/assets/a10a36a6-b656-4505-8697-1ca017b3e35f" />
 
 ---
 
@@ -94,6 +128,14 @@ and intermediate storage in sequential digital designs.
 
 **Files:**
 - `shift_reg.sv` – DUT
-- `shift_reg_tb.sv` – Testbench
+- `shift_reg_tb_layered.sv` – Testbench
+
+### Simulation Result:
+
+#### Waveform:
+<img width="905" height="106" alt="shift reg wave" src="https://github.com/user-attachments/assets/8955b628-d7d9-45e4-86f2-6c7b1177f0c9" />
+
+#### Simulation Log:
+<img width="328" height="341" alt="shift reg png" src="https://github.com/user-attachments/assets/a647337b-8378-4e45-ae31-d6566cf050eb" />
 
 ```
