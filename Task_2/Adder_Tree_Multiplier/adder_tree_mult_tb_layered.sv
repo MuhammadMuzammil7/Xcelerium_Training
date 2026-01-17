@@ -213,7 +213,7 @@ interface mult_if #(parameter WIDTH_A = 8, parameter WIDTH_B = 8, parameter WIDT
 endinterface
 
 // Adder Tree Multiplier Testbench Top
-module adder_tree_mult_layered;
+module adder_tree_mult_tb_layered;
     parameter WIDTH_A = 8;
     parameter WIDTH_B = 8;
     parameter WIDTH_P = 16;
@@ -247,6 +247,6 @@ module adder_tree_mult_layered;
    
     initial begin
         $dumpfile("adder_tree_mult.vcd");
-        $dumpvars(0, adder_tree_mult_layered);
+        $dumpvars(0, adder_tree_mult_tb_layered);
     end
 endmodule
