@@ -35,6 +35,9 @@ and a carry-out, allowing it to handle arithmetic operations that exceed the 32-
 - `adder32.sv` – DUT
 - `adder32_tb.sv` – Testbench
 
+### Simulation Result
+<img width="615" height="108" alt="adderattach1" src="https://github.com/user-attachments/assets/0ee0f696-26fe-4c9b-a9b6-cdafd4507394" />
+
 ---
 
 ### Barrel Shifter
@@ -44,6 +47,9 @@ using a 5-bit input, allowing shifts from 0 to 31 positions, while the direction
 **Files:**
 - `barrel_shifter.sv` – DUT
 - `barrel_shifter_tb.sv` – Testbench
+
+### Simulation Result
+<img width="719" height="91" alt="barrelshifterattach1" src="https://github.com/user-attachments/assets/fff26835-a98a-4fbd-9d58-2e98f9c84120" />
 
 ---
 
@@ -57,5 +63,7 @@ low. This module is useful for selecting the highest-priority signal in combinat
 - `encoder8to3.sv` – DUT
 - `encoder8to3_tb.sv` – Testbench
 
----
+### Simulation Result
+<img width="717" height="97" alt="encoder8to3attach1" src="https://github.com/user-attachments/assets/2e5684c2-393a-4353-b8cd-c04763358ad7" />
 
+---
