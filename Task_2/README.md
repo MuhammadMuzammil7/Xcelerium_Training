@@ -52,7 +52,7 @@ The adder tree multiplier implements an 8-bit by 8-bit multiplication using a st
 <img width="906" height="89" alt="adder tree wave" src="https://github.com/user-attachments/assets/03ea7692-4d24-4dd8-afd4-212b9803a338" />
 
 #### Simulation Log:
-<img width="406" height="344" alt="adder tree png" src="https://github.com/user-attachments/assets/2714eb1c-8124-44f6-8373-8db8bc4479a1" />
+<img width="405" height="341" alt="adder tree log" src="https://github.com/user-attachments/assets/3dc2bb01-8534-4e2b-bd23-02d997d03990" />
 
 ---
 
@@ -76,7 +76,7 @@ The array multiplier implements an 8-bit by 8-bit multiplication using a structu
 <img width="904" height="119" alt="array mult wave" src="https://github.com/user-attachments/assets/ecc2157d-572d-44e7-91f5-dc514b81a32a" />
 
 #### Simulation Log:
-<img width="516" height="344" alt="array mult png" src="https://github.com/user-attachments/assets/bbadb73c-a2f0-4e4e-9820-ca007f24e160" />
+<img width="531" height="342" alt="array mult log" src="https://github.com/user-attachments/assets/98258458-d88d-4723-bab5-4115f82d64ba" />
 
 ---
 
@@ -113,7 +113,7 @@ module represents a basic sequential storage element in digital systems.
 <img width="905" height="89" alt="reg wave eda" src="https://github.com/user-attachments/assets/77e1d663-f603-4dcf-9aea-6575fc7e50b3" />
 
 #### Simulation Log:
-<img width="372" height="214" alt="reg log" src="https://github.com/user-attachments/assets/a10a36a6-b656-4505-8697-1ca017b3e35f" />
+<img width="542" height="290" alt="reg 32 log" src="https://github.com/user-attachments/assets/fc48987a-f88c-4d6f-b138-d1ac371bf68e" />
 
 ---
 
@@ -131,6 +131,6 @@ control signal, data can be shifted left or right when enabled. This module is u
 <img width="905" height="106" alt="shift reg wave" src="https://github.com/user-attachments/assets/8955b628-d7d9-45e4-86f2-6c7b1177f0c9" />
 
 #### Simulation Log:
-<img width="328" height="341" alt="shift reg png" src="https://github.com/user-attachments/assets/a647337b-8378-4e45-ae31-d6566cf050eb" />
+<img width="325" height="341" alt="shift reg log" src="https://github.com/user-attachments/assets/d55ae2e6-8ba7-4f80-9043-b3374b065f1f" />
 
 ---
