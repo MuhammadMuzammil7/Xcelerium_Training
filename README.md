@@ -66,5 +66,4 @@ Modules include:
 
 ## Author
 **Muhammad Muzammil Ahmed**  
-Electronic Engineering Student  
-
+Electronic Engineer
